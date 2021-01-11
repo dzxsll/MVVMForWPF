@@ -19,7 +19,7 @@ namespace MVVM.Command
 
         // Using a DependencyProperty as the backing store for MyProperty.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty CommandProperty =
-            DependencyProperty.Register("Command", typeof(int), typeof(RelayEventCommand), new PropertyMetadata(null));
+            DependencyProperty.Register("Command", typeof(ICommand), typeof(RelayEventCommand), new PropertyMetadata(null));
 
         public object CommandParameter
         {
